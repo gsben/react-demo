@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" style={{borderRadius: "50%"}}/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edi111t <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
