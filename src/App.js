@@ -1,28 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Parent from "./component/Parent";
+import Child from "./component/Child";
+import Helloworld from "./component/HelloWorld";
+// import { useEffect, useState } from "react";
 
 function App() {
+  console.log("为什么要执行两遍");
+  // const [count, setCount] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img
-          src={logo}
-          className="App-logo"
-          alt="logo"
-          style={{ borderRadius: "50%" }}
-        />
-        <p>
-          Edit <code>Edit/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React start this step
-        </a>
-      </header>
+      <img alt="1" src={logo} />
+      Learn React start this step
+      <Parent message="this is parent component" />
+      <Helloworld />
+      <Child onUpdate={(data) => console.log(11, data)} />
     </div>
   );
 }
