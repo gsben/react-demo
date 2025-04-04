@@ -11,9 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      <img alt="1" src={logo} />
-      Learn React start this step
-      <Parent message="this is parent component" />
+      <img alt="1" style={{ height: "300px" }} src={logo} />
+      <Parent message="this is react page" />
       <Helloworld />
       <Child onUpdate={(data) => console.log(11, data)} />
     </div>
